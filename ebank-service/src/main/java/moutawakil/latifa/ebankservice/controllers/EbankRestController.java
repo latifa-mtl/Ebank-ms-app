@@ -21,7 +21,7 @@ public class EbankRestController {
         return ebankService.getAllBankAccounts();
     }
 
-    @GetMapping("/accounts/{id")
+    @GetMapping("/accounts/{id}")
     public BankAccount getBankAccountById(@PathVariable String id){
         return ebankService.getBankAccountById(id);
     }

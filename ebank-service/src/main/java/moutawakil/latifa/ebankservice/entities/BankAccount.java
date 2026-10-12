@@ -18,7 +18,7 @@ import java.util.Date;
 @NoArgsConstructor
 @Builder
 public class BankAccount {
-    @Id @GeneratedValue
+    @Id
     private String id;
     private Date createdAt;
     private double balance;
