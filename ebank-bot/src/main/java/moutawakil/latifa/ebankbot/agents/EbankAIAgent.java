@@ -10,7 +10,6 @@ public class EbankAIAgent {
     private ChatClient chatClient;
 
     public EbankAIAgent(ChatClient.Builder chatClient, ChatMemory chatMemory) {
-        //prb de chat memory to fix after
         this.chatClient = chatClient
                 .defaultAdvisors(MessageChatMemoryAdvisor.builder(chatMemory).build())
                 .defaultAdvisors(a -> a.param(ChatMemory.CONVERSATION_ID, "default"))
