@@ -1,0 +1,14 @@
+<div class="p-3">
+  <div class="card-body">
+    <input [(ngModel)]="query"
+           type="text" class="form-control m-2" style="display: inline; width: 80%">
+    <button (click)="askAgent()" class="btn btn-primary" style="display: inline">
+      <i class="bi bi-search"></i>
+    </button>
+  </div>
+  <div class="card-body">
+    @if (response$ | async ; as botResponse){
+      {{botResponse}}
+    }
+  </div>
+</div>
