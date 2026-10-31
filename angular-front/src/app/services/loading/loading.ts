@@ -1,10 +1,7 @@
-import {Component, signal} from '@angular/core';
+import {Injectable, signal} from '@angular/core';
 
-@Component({
-  selector: 'app-loading',
-  imports: [],
-  templateUrl: './loading.html',
-  styleUrl: './loading.css',
+@Injectable({
+  providedIn: 'root',
 })
 export class LoadingService {
   loading = signal<boolean>(false);

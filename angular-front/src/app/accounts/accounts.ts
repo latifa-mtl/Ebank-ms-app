@@ -10,6 +10,7 @@ import {LoadingService} from '../services/loading/loading';
   imports: [
     AsyncPipe
   ],
+  standalone: true,
   templateUrl: './accounts.html',
   styleUrl: './accounts.css',
 })

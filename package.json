@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "marked": "^18.1.2",
+    "ngx-markdown": "^22.1.1"
+  }
+}

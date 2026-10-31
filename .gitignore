@@ -1,4 +1,13 @@
 HELP.md
+
+# Root Node dependencies
+/node_modules/
+
+# Angular dependencies and builds
+**/node_modules/
+**/dist/
+**/.angular/
+
 target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
